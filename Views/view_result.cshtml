@@ -1,0 +1,8 @@
+<h1>Search results</h1>
+<ul>
+  @foreach(var cd in Model)
+  {
+    <li><a href="/cds/@cd.GetId()">@cd.GetArtist()</a> - @cd.GetTitle()</li>
+  }
+</ul>
+<p><a href="/">Add another CD</a></p>
